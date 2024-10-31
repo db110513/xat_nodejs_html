@@ -1,7 +1,10 @@
 # xat
 
 Codi compilat:
+
 https://www.loom.com/share/e8d93cbcaafc41ae80bd77d3f9c8268f?sid=03d2660e-5015-45c0-b230-871d7a511f76
+
+
 
 
 index.html
