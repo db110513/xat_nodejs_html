@@ -7,7 +7,7 @@ index.html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xat Simple</title>
+  <title>Xat</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,12 +33,10 @@ index.html
       clear: both;
     }
     .my-message {
-      background-color: #33FF57;
       float: right;
       text-align: right;
     }
     .other-message {
-      background-color: #081862;
       float: left;
       text-align: left;
     }
@@ -66,6 +64,9 @@ index.html
       color: white;
       border-radius: 4px;
       cursor: pointer;
+    }
+    #username {
+      margin-top: 20px; /* Ajusta aquest valor segons el marge desitjat */
     }
   </style>
 </head>
@@ -113,8 +114,8 @@ index.html
     socket.on('chat message', ({ msg, color, sender }) => {
       const item = document.createElement('li');
       item.textContent = msg;
-      item.style.backgroundColor = color;
-
+      item.style.backgroundColor = color; 
+      
       if (sender === username) {
         item.classList.add('my-message');
       } else {
